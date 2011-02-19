@@ -114,4 +114,15 @@ public class CombinationGenerator {
 		return a;
 
 	}
+	
+	public static void main(String... args){
+		CombinationGenerator comb = new CombinationGenerator(25, 5);
+		long counter = 0;
+		while(comb.hasMore()){
+			comb.getNext();
+			counter++;
+		}
+		System.out.println(counter);
+	
+	}
 }

@@ -39,6 +39,8 @@ public class SceneScheduler {
 		}
 		
 		this.numberOfShootingDays = numberOfShootingDays;
+		
+		// Scenes without cost to simplify the computation
 		while(scenes.size() !=  numberOfShootingDays * 5)
 			scenes.add(new Scene(scenes.size(), new Actor(-1, "empty", 0)));
 		
